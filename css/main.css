@@ -5,7 +5,7 @@ background: rgb(45, 39, 53);
 }
 header{
   background: #282d2a;
-
+padding: 15px 0;
 }
 .container {
 	width: 800px;
@@ -15,7 +15,11 @@ header{
 header img{
   width: 10%;
 }
-.lista-menu
+header i{
+  float: right;
+  display: none;
+}
+header .lista-menu
 {
 	float: right;
 	list-style: none;
@@ -42,7 +46,7 @@ header img{
 .her{
   background: url(../image/image2.jpg) no-repeat;
   background-size: cover;
-  height: 400px;
+  height: auto;
   text-align: center;
   display:table;
 }
@@ -185,21 +189,66 @@ section .video p{
   color:#fff;
   padding-left: 10px;
 }
-i{
+.slider i{
   color: #fff;
   width: 10%;
 }
+
+
 /* Responsive */
 
 @media screen and (max-width : 920px) {
 .container{
   width: 700px;
 }
-.texto img{
+header img{
+  width: 50%;
+}
+header i{
+  float: right;
+font-size: 50px;
+  color:#fff;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+header i:hover .lista-menu{
+  visibility: visible;
+}
+.her .texto{
+margin: 5% 5%;
+height: auto;
+}
+.her .texto h1{
+  font-size: 100px;
+
+}
+
+.her .texto img{
   width: 100%;
 }
+.col1,.col2,.col3, .col4{
+  width: 100%;
+margin-left:  5% 0;
+text-align: center;
+}
+
+.col5{
+  display: none;
+}
+.lista-menu{
+display: none;
+}
+
 }
 
 @media screen and (max-width: 600px) {
+.container{
+  width: 400px;
+}
 
 }

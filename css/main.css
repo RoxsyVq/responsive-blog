@@ -167,6 +167,7 @@ text-align: center;
   color:#fff;
   text-align: left;
 }
+/*------------------------------------------------section */
 section .imgen{
   color:#edeeeb;
   background:rgb(27, 24, 33);
@@ -182,7 +183,7 @@ section h4{
 section .imgen p{
   padding-left: 10px;
 }
-.video{
+section .video{
   background: rgb(27, 24, 33);
 }
 section .video p{
@@ -193,9 +194,19 @@ section .video p{
   color: #fff;
   width: 10%;
 }
+footer{
+  background: #212121;
+margin:0;
+height: 50px;
 
+}
+footer p{
+  color: #fff;
+  padding-top: 20px;
 
-/* Responsive */
+}
+
+/*-------------------------------------------------- Responsive */
 
 @media screen and (max-width : 920px) {
 .container{
@@ -233,7 +244,7 @@ height: auto;
 }
 .col1,.col2,.col3, .col4{
   width: 100%;
-margin-left:  5% 0;
+
 text-align: center;
 }
 
@@ -243,12 +254,17 @@ text-align: center;
 .lista-menu{
 display: none;
 }
+footer{
+  text-align: center;
+  font-size: 20px;
+}
 
 }
 
 @media screen and (max-width: 600px) {
 .container{
   width: 400px;
+  font-weight: bold;
 }
 
 }
